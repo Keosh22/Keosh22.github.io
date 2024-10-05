@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1 class="title">My <span class="title-span">Todo</span> List</h1>
+      <div class="container">
+        <!-- Left -->
+        <section class="form-container">
+          <div class="input-container">
+            <label class="" for="todo">Todo</label>
+            <input
+              type="text"
+              id="todo"
+              class="input-form"
+              placeholder="Add new todo"
+              maxlength="40"
+            />
+          </div>
+          <div class="input-container">
+            <label for="description">Description</label>
+            <textarea
+              id="description"
+              rows="2"
+              maxlength="80"
+              placeholder="Add description"
+            ></textarea>
+          </div>
+          <div class="input-container">
+            <label class="" for="date">Date</label>
+            <input
+              type="date"
+              id="date"
+              class="input-form"
+              placeholder="Add new todo"
+            />
+          </div>
+          <div>
+            <button id="add-btn">Add</button>
+            <button id="update-btn" disabled>Update</button>
+          </div>
+
+          <div id="error-container">
+           
+          </div>
+        </section>
+
+        <!-- Right -->
+        <section id="TodoList" class="list-container">
+          <!-- Card content -->
+        </section>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
